@@ -23,10 +23,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## This function first checks if the inverse of a spcial matrix object (created with the above function)
+## This function first checks if the inverse of a special matrix object (created with the above function)
 ##     has been calculated and cached. 
 ## If not, then it calculates and stores the inverse.
-## Otherwise, it return the stored inverse. 
+## Otherwise, it returns the stored inverse. 
 cacheSolve <- function(x, ...) {
         inv <- x$getinv()
         if(!is.null(inv)) {
